@@ -1,0 +1,521 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ED74A60A166B9197008858B7 /* stringLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = EDF159B6166A3AE80054AC79 /* stringLogger.m */; };
+		ED74A613166C3DE4008858B7 /* simpleMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = ED74A612166C3DE4008858B7 /* simpleMessage.m */; };
+		ED74A618166DC246008858B7 /* simpleMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = ED74A612166C3DE4008858B7 /* simpleMessage.m */; };
+		EDCAC40616646A7300DAAF3D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDCAC40516646A7300DAAF3D /* Cocoa.framework */; };
+		EDCAC41016646A7300DAAF3D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EDCAC40E16646A7300DAAF3D /* InfoPlist.strings */; };
+		EDCAC41216646A7300DAAF3D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EDCAC41116646A7300DAAF3D /* main.m */; };
+		EDCAC41616646A7300DAAF3D /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = EDCAC41416646A7300DAAF3D /* Credits.rtf */; };
+		EDCAC41916646A7400DAAF3D /* serverAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EDCAC41816646A7400DAAF3D /* serverAppDelegate.m */; };
+		EDCAC41C16646A7400DAAF3D /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDCAC41A16646A7400DAAF3D /* MainMenu.xib */; };
+		EDCAC42F1664756C00DAAF3D /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = EDCAC42C1664756C00DAAF3D /* GCDAsyncSocket.m */; };
+		EDCAC43D1664872900DAAF3D /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDCAC43C1664872900DAAF3D /* Security.framework */; };
+		EDEE63421667780800A1B3D6 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDCAC40516646A7300DAAF3D /* Cocoa.framework */; };
+		EDEE63481667780800A1B3D6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EDEE63461667780800A1B3D6 /* InfoPlist.strings */; };
+		EDEE634A1667780800A1B3D6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EDEE63491667780800A1B3D6 /* main.m */; };
+		EDEE634E1667780800A1B3D6 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = EDEE634C1667780800A1B3D6 /* Credits.rtf */; };
+		EDEE63511667780800A1B3D6 /* clientAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EDEE63501667780800A1B3D6 /* clientAppDelegate.m */; };
+		EDEE63541667780800A1B3D6 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDEE63521667780800A1B3D6 /* MainMenu.xib */; };
+		EDEE63591667781400A1B3D6 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDCAC43C1664872900DAAF3D /* Security.framework */; };
+		EDEE635C1667823600A1B3D6 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = EDCAC42C1664756C00DAAF3D /* GCDAsyncSocket.m */; };
+		EDF159B8166AF3090054AC79 /* stringLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = EDF159B6166A3AE80054AC79 /* stringLogger.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		ED74A611166C3DE4008858B7 /* simpleMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = simpleMessage.h; sourceTree = "<group>"; };
+		ED74A612166C3DE4008858B7 /* simpleMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = simpleMessage.m; sourceTree = "<group>"; };
+		EDCAC40116646A7300DAAF3D /* fileServer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fileServer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDCAC40516646A7300DAAF3D /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		EDCAC40816646A7300DAAF3D /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		EDCAC40916646A7300DAAF3D /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		EDCAC40A16646A7300DAAF3D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EDCAC40D16646A7300DAAF3D /* fileServer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "fileServer-Info.plist"; sourceTree = "<group>"; };
+		EDCAC40F16646A7300DAAF3D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EDCAC41116646A7300DAAF3D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EDCAC41316646A7300DAAF3D /* fileServer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "fileServer-Prefix.pch"; sourceTree = "<group>"; };
+		EDCAC41516646A7300DAAF3D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		EDCAC41716646A7400DAAF3D /* serverAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = serverAppDelegate.h; sourceTree = "<group>"; };
+		EDCAC41816646A7400DAAF3D /* serverAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = serverAppDelegate.m; sourceTree = "<group>"; };
+		EDCAC41B16646A7400DAAF3D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		EDCAC42B1664756C00DAAF3D /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
+		EDCAC42C1664756C00DAAF3D /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
+		EDCAC42D1664756C00DAAF3D /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
+		EDCAC42E1664756C00DAAF3D /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
+		EDCAC4341664760400DAAF3D /* shared.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = shared.h; sourceTree = "<group>"; };
+		EDCAC43C1664872900DAAF3D /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		EDEE63401667780800A1B3D6 /* fileClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fileClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDEE63451667780800A1B3D6 /* fileClient-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "fileClient-Info.plist"; sourceTree = "<group>"; };
+		EDEE63471667780800A1B3D6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EDEE63491667780800A1B3D6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EDEE634B1667780800A1B3D6 /* fileClient-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "fileClient-Prefix.pch"; sourceTree = "<group>"; };
+		EDEE634D1667780800A1B3D6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		EDEE634F1667780800A1B3D6 /* clientAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = clientAppDelegate.h; sourceTree = "<group>"; };
+		EDEE63501667780800A1B3D6 /* clientAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = clientAppDelegate.m; sourceTree = "<group>"; };
+		EDEE63531667780800A1B3D6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		EDF159B5166A3AE80054AC79 /* stringLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stringLogger.h; sourceTree = "<group>"; };
+		EDF159B6166A3AE80054AC79 /* stringLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = stringLogger.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EDCAC3FE16646A7300DAAF3D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDCAC43D1664872900DAAF3D /* Security.framework in Frameworks */,
+				EDCAC40616646A7300DAAF3D /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDEE633D1667780800A1B3D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDEE63591667781400A1B3D6 /* Security.framework in Frameworks */,
+				EDEE63421667780800A1B3D6 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ED74A610166C3DAC008858B7 /* messager */ = {
+			isa = PBXGroup;
+			children = (
+				ED74A611166C3DE4008858B7 /* simpleMessage.h */,
+				ED74A612166C3DE4008858B7 /* simpleMessage.m */,
+			);
+			name = messager;
+			sourceTree = "<group>";
+		};
+		EDCAC3F616646A7300DAAF3D = {
+			isa = PBXGroup;
+			children = (
+				ED74A610166C3DAC008858B7 /* messager */,
+				EDF159B3166A3AB80054AC79 /* logger */,
+				EDCAC4321664757800DAAF3D /* GCKAsyncSocket */,
+				EDCAC43C1664872900DAAF3D /* Security.framework */,
+				EDCAC433166475BC00DAAF3D /* shared */,
+				EDCAC40B16646A7300DAAF3D /* fileServer */,
+				EDEE63431667780800A1B3D6 /* fileClient */,
+				EDCAC40416646A7300DAAF3D /* Frameworks */,
+				EDCAC40216646A7300DAAF3D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EDCAC40216646A7300DAAF3D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EDCAC40116646A7300DAAF3D /* fileServer.app */,
+				EDEE63401667780800A1B3D6 /* fileClient.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EDCAC40416646A7300DAAF3D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EDCAC40516646A7300DAAF3D /* Cocoa.framework */,
+				EDCAC40716646A7300DAAF3D /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EDCAC40716646A7300DAAF3D /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EDCAC40816646A7300DAAF3D /* AppKit.framework */,
+				EDCAC40916646A7300DAAF3D /* CoreData.framework */,
+				EDCAC40A16646A7300DAAF3D /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		EDCAC40B16646A7300DAAF3D /* fileServer */ = {
+			isa = PBXGroup;
+			children = (
+				EDCAC41716646A7400DAAF3D /* serverAppDelegate.h */,
+				EDCAC41816646A7400DAAF3D /* serverAppDelegate.m */,
+				EDCAC41A16646A7400DAAF3D /* MainMenu.xib */,
+				EDCAC40C16646A7300DAAF3D /* Supporting Files */,
+			);
+			path = fileServer;
+			sourceTree = "<group>";
+		};
+		EDCAC40C16646A7300DAAF3D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EDCAC40D16646A7300DAAF3D /* fileServer-Info.plist */,
+				EDCAC40E16646A7300DAAF3D /* InfoPlist.strings */,
+				EDCAC41116646A7300DAAF3D /* main.m */,
+				EDCAC41316646A7300DAAF3D /* fileServer-Prefix.pch */,
+				EDCAC41416646A7300DAAF3D /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EDCAC4321664757800DAAF3D /* GCKAsyncSocket */ = {
+			isa = PBXGroup;
+			children = (
+				EDCAC42B1664756C00DAAF3D /* GCDAsyncSocket.h */,
+				EDCAC42C1664756C00DAAF3D /* GCDAsyncSocket.m */,
+				EDCAC42D1664756C00DAAF3D /* GCDAsyncUdpSocket.h */,
+				EDCAC42E1664756C00DAAF3D /* GCDAsyncUdpSocket.m */,
+			);
+			name = GCKAsyncSocket;
+			path = fileServer;
+			sourceTree = "<group>";
+		};
+		EDCAC433166475BC00DAAF3D /* shared */ = {
+			isa = PBXGroup;
+			children = (
+				EDCAC4341664760400DAAF3D /* shared.h */,
+			);
+			name = shared;
+			sourceTree = "<group>";
+		};
+		EDEE63431667780800A1B3D6 /* fileClient */ = {
+			isa = PBXGroup;
+			children = (
+				EDEE634F1667780800A1B3D6 /* clientAppDelegate.h */,
+				EDEE63501667780800A1B3D6 /* clientAppDelegate.m */,
+				EDEE63521667780800A1B3D6 /* MainMenu.xib */,
+				EDEE63441667780800A1B3D6 /* Supporting Files */,
+			);
+			path = fileClient;
+			sourceTree = "<group>";
+		};
+		EDEE63441667780800A1B3D6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EDEE63451667780800A1B3D6 /* fileClient-Info.plist */,
+				EDEE63461667780800A1B3D6 /* InfoPlist.strings */,
+				EDEE63491667780800A1B3D6 /* main.m */,
+				EDEE634B1667780800A1B3D6 /* fileClient-Prefix.pch */,
+				EDEE634C1667780800A1B3D6 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EDF159B3166A3AB80054AC79 /* logger */ = {
+			isa = PBXGroup;
+			children = (
+				EDF159B5166A3AE80054AC79 /* stringLogger.h */,
+				EDF159B6166A3AE80054AC79 /* stringLogger.m */,
+			);
+			name = logger;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EDCAC40016646A7300DAAF3D /* fileServer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDCAC41F16646A7400DAAF3D /* Build configuration list for PBXNativeTarget "fileServer" */;
+			buildPhases = (
+				EDCAC3FD16646A7300DAAF3D /* Sources */,
+				EDCAC3FE16646A7300DAAF3D /* Frameworks */,
+				EDCAC3FF16646A7300DAAF3D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = fileServer;
+			productName = fileServer;
+			productReference = EDCAC40116646A7300DAAF3D /* fileServer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EDEE633F1667780800A1B3D6 /* fileClient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDEE63571667780800A1B3D6 /* Build configuration list for PBXNativeTarget "fileClient" */;
+			buildPhases = (
+				EDEE633C1667780800A1B3D6 /* Sources */,
+				EDEE633D1667780800A1B3D6 /* Frameworks */,
+				EDEE633E1667780800A1B3D6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = fileClient;
+			productName = fileClient;
+			productReference = EDEE63401667780800A1B3D6 /* fileClient.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EDCAC3F816646A7300DAAF3D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = server;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = antan;
+			};
+			buildConfigurationList = EDCAC3FB16646A7300DAAF3D /* Build configuration list for PBXProject "fileServer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = EDCAC3F616646A7300DAAF3D;
+			productRefGroup = EDCAC40216646A7300DAAF3D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EDCAC40016646A7300DAAF3D /* fileServer */,
+				EDEE633F1667780800A1B3D6 /* fileClient */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EDCAC3FF16646A7300DAAF3D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDCAC41016646A7300DAAF3D /* InfoPlist.strings in Resources */,
+				EDCAC41616646A7300DAAF3D /* Credits.rtf in Resources */,
+				EDCAC41C16646A7400DAAF3D /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDEE633E1667780800A1B3D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDEE63481667780800A1B3D6 /* InfoPlist.strings in Resources */,
+				EDEE634E1667780800A1B3D6 /* Credits.rtf in Resources */,
+				EDEE63541667780800A1B3D6 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EDCAC3FD16646A7300DAAF3D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED74A60A166B9197008858B7 /* stringLogger.m in Sources */,
+				EDCAC41216646A7300DAAF3D /* main.m in Sources */,
+				EDCAC41916646A7400DAAF3D /* serverAppDelegate.m in Sources */,
+				EDCAC42F1664756C00DAAF3D /* GCDAsyncSocket.m in Sources */,
+				ED74A613166C3DE4008858B7 /* simpleMessage.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDEE633C1667780800A1B3D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED74A618166DC246008858B7 /* simpleMessage.m in Sources */,
+				EDF159B8166AF3090054AC79 /* stringLogger.m in Sources */,
+				EDEE635C1667823600A1B3D6 /* GCDAsyncSocket.m in Sources */,
+				EDEE634A1667780800A1B3D6 /* main.m in Sources */,
+				EDEE63511667780800A1B3D6 /* clientAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EDCAC40E16646A7300DAAF3D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EDCAC40F16646A7300DAAF3D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		EDCAC41416646A7300DAAF3D /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EDCAC41516646A7300DAAF3D /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		EDCAC41A16646A7400DAAF3D /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EDCAC41B16646A7400DAAF3D /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		EDEE63461667780800A1B3D6 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EDEE63471667780800A1B3D6 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		EDEE634C1667780800A1B3D6 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EDEE634D1667780800A1B3D6 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		EDEE63521667780800A1B3D6 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EDEE63531667780800A1B3D6 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EDCAC41D16646A7400DAAF3D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		EDCAC41E16646A7400DAAF3D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		EDCAC42016646A7400DAAF3D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "fileServer/fileServer-Prefix.pch";
+				INFOPLIST_FILE = "fileServer/fileServer-Info.plist";
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		EDCAC42116646A7400DAAF3D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "fileServer/fileServer-Prefix.pch";
+				INFOPLIST_FILE = "fileServer/fileServer-Info.plist";
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		EDEE63551667780800A1B3D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "fileClient/fileClient-Prefix.pch";
+				INFOPLIST_FILE = "fileClient/fileClient-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		EDEE63561667780800A1B3D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "fileClient/fileClient-Prefix.pch";
+				INFOPLIST_FILE = "fileClient/fileClient-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EDCAC3FB16646A7300DAAF3D /* Build configuration list for PBXProject "fileServer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDCAC41D16646A7400DAAF3D /* Debug */,
+				EDCAC41E16646A7400DAAF3D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EDCAC41F16646A7400DAAF3D /* Build configuration list for PBXNativeTarget "fileServer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDCAC42016646A7400DAAF3D /* Debug */,
+				EDCAC42116646A7400DAAF3D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EDEE63571667780800A1B3D6 /* Build configuration list for PBXNativeTarget "fileClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDEE63551667780800A1B3D6 /* Debug */,
+				EDEE63561667780800A1B3D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EDCAC3F816646A7300DAAF3D /* Project object */;
+}
